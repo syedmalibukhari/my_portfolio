@@ -62,6 +62,10 @@ window.addEventListener("scroll",function(){
 });
 
 
+// sticky menu /////////////////////////////////////
+let menuIcon = document.querySelector("#menu-icon");
+let navlist = document.querySelector("navlist");
 
-
-
+menuIcon.onclick = ()=>{
+    
+}

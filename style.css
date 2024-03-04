@@ -393,8 +393,10 @@ section {
     font-size: .5rem;
     position: absolute;
     padding: 3rem;
-    width: 12rem;
-    height: 8rem;
+    max-width: 12rem;
+    max-height: 8rem;
+    width: auto;
+    height: auto;
     border-radius: 30% 40% 40% 30% / 60% 60% 30% 30%;
     display: block;
     box-shadow: var(--neon-box-shadow);
@@ -729,7 +731,7 @@ section {
 /* Contact section css ----------------- */
 
 .contact {
-    background: var(--secon-bg-color);
+    background: gray;
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -915,6 +917,9 @@ footer a i {
         --neon-box-shadow: 0 0 .8rem rgb(244, 247, 66);
         --h2-font: 3rem;
     }
+    html{
+        font-size: 45%;
+    }
     
     .home-content{
         margin-top: 3rem;
@@ -933,10 +938,24 @@ footer a i {
     }
 }
 
-/* @media(max-width:768px) {
+@media(max-width:768px) {
+    html{
+        .about{}
+    }
     #menu-icon{
         display: block;
         transition: all .4s ease;
     }
-} */
+    .navlist{
+        display: flex;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+
+    }
+}
 
