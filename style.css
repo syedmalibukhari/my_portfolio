@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;0,800;0,900;0,1000;0,1100;01,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -9,13 +8,17 @@
     text-decoration: none;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 :root {
     --text-color: #e5f0df;
     --hover-color: #83fcec;
     --bg-color: #250325;
     --secon-bg-color: rgb(28, 94, 83);
     --big-font: 2.5rem;
-    --normal-font: 2rem;
+    --normal-font: 1.8rem;
     --neon-box-shadow: 0 0 .5rem rgb(244, 247, 66);
     --h2-font: 3rem;
     --font-neon-text-shadow: 0 0 10px rgba(10, 245, 255, 0.3),
@@ -43,7 +46,7 @@
 }
 
 body {
-    font-family: "Libre Baskerville", serif;
+    font-family: "Josefin Sans", sans-serif;;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -53,22 +56,22 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 1px solid transparent;
+    border-bottom: .1rem solid transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
 }
 
 header.sticky{
     background: #25032560;
-    border-bottom: 1px solid yellow;
+    border-bottom: .1rem solid yellow;
 }
 
 .logo {
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     text-align: center;
 }
 
@@ -79,7 +82,7 @@ header.sticky{
 .navlist a {
     color: var(--text-color);
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
 }
 
 .navlist a:hover {
@@ -96,7 +99,7 @@ header.sticky{
 }
 
 .navlist a.active {
-    color: red;
+    color: rgb(221, 8, 8);
     text-decoration: underline;
 }
 
@@ -109,15 +112,15 @@ span {
     font-size: 1.8rem;
     z-index: 999;
     cursor: pointer;
-    margin-left: 15px;
+    margin-left: 1.5rem;
     background: var(--hover-color);
-    border-radius: 3px;
+    border-radius: .3rem;
     color: var(--secon-bg-color);
     display: none;
 }
 
 section {
-    padding: 100px 10%;
+    padding: 10rem 10%;
 }
 
 .home {
@@ -127,16 +130,17 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    grid-gap: 4em;
+    grid-gap: 40rem;
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: 60rem;
 }
 
 .home-content h1 {
     font-size: var(--big-font);
     font-weight: 600;
+    margin-bottom: .4rem;
 }
 
 .change-text {
@@ -146,10 +150,10 @@ section {
 
 .change-text h3 {
     display: inline-flex;
-    margin: 0px;
+    margin-bottom: 0;
     vertical-align: top;
     font-weight: 600;
-    font-size: 1.9rem;
+    font-size: 2rem;
 }
 
 .change-text h3 .word {
@@ -159,7 +163,7 @@ section {
 }
 
 .change-text h3 .word .letter {
-    transform-origin: center center 25px;
+    transform-origin: center center .25rem;
 }
 
 .change-text h3 .word .letter.out {
@@ -178,16 +182,14 @@ section {
 .home-content p {
     color: #946b8e;
     line-height: 1.5;
-    margin-top: 30px;
+    margin-top: .5rem;
     font-size: small;
 }
 
 .info-box {
     display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    margin: 0.5rem 0 2rem;
+    width: auto;
+    margin: 1rem 0 1rem;
 }
 
 .info-box h5 {
@@ -196,36 +198,36 @@ section {
     font-size: 1.2rem;
 }
 
-.info-box a {
-    font-size: 0.4;
-    color: rgb(255, 34, 5);
+.info-box p {
+    font-size: 2.3rem;
+    color: var(--hover-color);
 }
 
 .btn-box {
     display: flex;
     justify-content: space-between;
-    width: 320px;
-    height: 45px;
+    width: 32rem;
+    height: 4.5rem;
 }
 
 .btn-box .btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 15rem;
     height: 100%;
     background: var(--hover-color);
     color: var(--bg-color);
     font-size: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     font-weight: 600;
     transition: .6s;
     box-shadow: var(--neon-box-shadow);
-    border-radius: 6px;
+    border-radius: .6rem;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    border: 2px solid greenyellow;
+    border: .2rem solid greenyellow;
 }
 
 .btn:hover {
@@ -265,22 +267,22 @@ section {
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
-    width: 320px;
-    height: 40px;
+    width: 32rem;
+    height: 4rem;
 }
 
 .social-icon a {
     display: inline-flex;
-    width: 50px;
+    width: 5rem;
     height: 100%;
     justify-content: center;
     align-items: center;
     background: var(--bg-color);
     color: var(--hover-color);
-    border: 3px solid var(--hover-color);
+    border: .3rem solid var(--hover-color);
     transition: .6s;
     box-shadow: 0 0 0.5rem #0ff8f8;
-    border-radius: 8px;
+    border-radius: .8rem;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -293,7 +295,7 @@ section {
 .social-icon a:hover {
     color: red;
     background: greenyellow;
-    box-shadow: 2px 2px 10px rgba(253, 237, 14, 0.9),
+    box-shadow: .2rem .2rem 1rem rgba(253, 237, 14, 0.9),
         0 0 20px rgba(253, 237, 14, 0.902),
         0 0 40px rgba(253, 237, 14, 0.9),
         0 0 30px rgba(253, 237, 14, 0.9),
@@ -313,7 +315,7 @@ section {
 
 .img-box img {
     width: 100%;
-    max-width: 400px;
+    max-width: 45rem;
     height: auto;
 }
 
@@ -326,17 +328,24 @@ section {
 }
 
 .liquade-shape:nth-child(2) {
-    filter: blur(80px);
+    filter: blur(4rem);
 }
 
 /* about section css ----------------- */
 
 .about {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    grid-gap: 2em;
-    background: var(--secon-bg-color);
+    grid-gap: 18rem; */
+    background: rgb(100, 185, 67);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 40rem;
 }
 
 .about .img-about {
@@ -344,8 +353,9 @@ section {
     position: relative;
 }
 
-.about .img-about {
-    max-width: 500px;
+.about .img-about img {
+    width: 100%;
+    max-width: 50rem;
     height: auto;
 }
 
@@ -353,24 +363,27 @@ section {
     color: rgb(247, 250, 69);
     font-size: .8rem;
     font-weight: 200;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .about-content h2 {
     color: var(--hover-color);
     font-weight: 700;
     font-size: var(--normal-font);
+    margin-top: 1rem;
 }
 
 .about-content h3 {
     font-weight: 600;
     font-size: 1.8rem;
-    margin-bottom: 5px;
+    margin: 2rem .5rem;
 }
 
 .about-content p {
     margin-bottom: .5rem;
+    line-height: 2rem;
 }
 
 .info-about1,
@@ -379,22 +392,22 @@ section {
     background: var(--bg-color);
     font-size: .5rem;
     position: absolute;
-    padding: 15px;
-    width: 100px;
-    height: 80px;
+    padding: 3rem;
+    width: 12rem;
+    height: 8rem;
     border-radius: 30% 40% 40% 30% / 60% 60% 30% 30%;
     display: block;
     box-shadow: var(--neon-box-shadow);
-    /* border: 2px solid var(--hover-color); */
-    outline: 3px solid rgb(241, 226, 177);
-    outline-offset: 2px;
+    border: .2rem solid var(--hover-color);
+    outline: .3rem solid rgb(241, 226, 177);
+    outline-offset: .2rem;
     z-index: 100;
     animation: morph 5s linear infinite;
 
 }
 
 .info-about1 {
-    left: 5%;
+    left: 6%;
     top: 36%;
 }
 
@@ -409,20 +422,31 @@ section {
 }
 
 .img-about span {
-    color: var(--hover-color);
+    color: var(--big-font);
 }
 
 /* services section css ----------------- */
+.services{
+    background: rgb(67, 167, 185);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    grid-gap: 40rem;
+}
+
 .main-text {
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     color: var(--hover-color);
 }
 
 .main-text h2 {
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: .5rem;
     font-size: var(--normal-font);
 }
 
@@ -430,7 +454,7 @@ section {
     color: rgb(229, 233, 14);
     font-size: .9rem;
     font-weight: 200;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     text-transform: uppercase;
 }
 
@@ -448,7 +472,8 @@ section {
     text-align: center;
     background: var(--secon-bg-color);
     translate: transform .4s;
-    border-radius: 10px;
+    border-radius: 1rem;
+    margin-top: 2rem;
 }
 
 .service-btn {
@@ -475,16 +500,17 @@ section {
 }
 
 .service-box h3 {
-    margin-top: 20px;
+    margin-top: 2rem;
     font-size: 1.5rem;
 }
 
 .service-box p {
     margin: .5rem 0 1.5rem 0;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     color: burlywood;
     line-height: 1.6;
+    font-size: 1.5rem;
 }
 
 
@@ -492,6 +518,13 @@ section {
 /* skills section css ----------------- */
 .skills {
     background: rgb(66, 66, 63);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    grid-gap: 40rem;
 }
 
 .skill-main {
@@ -572,6 +605,16 @@ section {
 
 
 /* portfolios section css ----------------- */
+.portfolios{
+    background: rgb(13, 112, 241);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    grid-gap: 40rem;
+}
 
 .fillter-buttons {
     margin: 2rem;
@@ -687,7 +730,13 @@ section {
 
 .contact {
     background: var(--secon-bg-color);
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    grid-gap: 40rem;
 }
 
 .contact form {
@@ -703,7 +752,7 @@ section {
     color: var(--text-color);
     margin-bottom: .8rem;
     border: none;
-    border-radius: 5px;
+    border-radius: .5rem;
     padding: .7rem;
     background: #250325;
 }
@@ -743,7 +792,7 @@ footer a {
     color: var(--text-color);
     background: var(--hover-color);
     padding: .6rem;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 
 footer a i {
@@ -884,10 +933,10 @@ footer a i {
     }
 }
 
-@media(max-width:768px) {
+/* @media(max-width:768px) {
     #menu-icon{
         display: block;
         transition: all .4s ease;
     }
-}
+} */
 
