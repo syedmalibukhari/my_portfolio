@@ -62,10 +62,16 @@ window.addEventListener("scroll",function(){
 });
 
 
-// sticky menu /////////////////////////////////////
+// toggle icon navbar  /////////////////////////////////////
 let menuIcon = document.querySelector("#menu-icon");
 let navlist = document.querySelector("navlist");
 
 menuIcon.onclick = ()=>{
-    
+    menuIcon.classList.toggle("bxs-x-square");
+    navlist.classList.toggle("open");
+}
+
+window.onscroll = ()=>{
+    menuIcon.classList.remove("bxs-x-square");
+    navlist.classList.replace("open");
 }
