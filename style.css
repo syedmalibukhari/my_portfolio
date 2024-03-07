@@ -968,10 +968,6 @@ footer a i {
         margin-top: 1rem;
     }
     
-
-    /*.navlist.open{
-        top: 100%;
-    }*/
 }
 
 
@@ -991,10 +987,6 @@ footer a i {
         font-size: large;
     }
 
-    #menu-icon.bx-x{
-        transform: rotate(-180deg);
-        
-    }
 
     .navlist{
         display: flex;
@@ -1054,15 +1046,4 @@ footer a i {
         grid-gap: 5em;
     }
     
-}
-
-@media(max-width:680px){
-    
-    }
-    
-    
-
-    /*.navlist.open{
-        
-    }*/
 }
