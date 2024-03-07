@@ -1024,8 +1024,8 @@ footer a i {
     }
 
     .info-about1 {
-        left: 5%;
-        top: 40%;
+        left: 2%;
+        top: 30%;
     }
     
     .info-about2 {
@@ -1035,7 +1035,7 @@ footer a i {
     
     .info-about3 {
         left: 61%;
-        top: 71%;
+        top: 45%;
     }
     
 }
@@ -1063,10 +1063,5 @@ footer a i {
     .main-section{
         width: 100%;
     }
-    }
+}
     
-    
-
-    /*.navlist.open{
-        
-    }*/
