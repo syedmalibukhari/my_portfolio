@@ -14,10 +14,10 @@ html{
 
 :root {
     --text-color: #e5f0df;
-    --hover-color: #83fcec;
-    --bg-color: #250325;
-    --secon-bg-color: rgb(28, 94, 83);
-    --big-font: 2.5rem;
+    --hover-color: #d7eb26;
+    --bg-color: #8b0f06;
+    --secon-bg-color: rgb(54, 4, 110);
+    --big-font: 3.5rem;
     --normal-font: 2rem;
     --neon-box-shadow: 0 0 .5rem rgb(244, 247, 66);
     --h2-font: 3rem;
@@ -72,12 +72,12 @@ header {
 }
 
 header.sticky{
-    background: #25032560;
+    background: rgba(137, 43, 226, 0.171);
     border-bottom: .1rem solid yellow;
 }
 
 .logo {
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     letter-spacing: .1rem;
     font-weight: 700;
     /* text-align: center; */
@@ -107,7 +107,7 @@ header.sticky{
 }
 
 .navlist a.active {
-    color: rgb(255, 44, 44);
+    color: var(--hover-color);
     text-decoration: underline;
     font-weight: 700;
 }
@@ -149,7 +149,7 @@ section {
 
 .home-content h1 {
     font-size: var(--big-font);
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .change-text {
@@ -162,8 +162,8 @@ section {
     margin-bottom: 0;
     margin-left: .1rem;
     vertical-align: top;
-    font-weight: 600;
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: 2.2rem;
 }
 
 .change-text h3 .word {
@@ -200,7 +200,7 @@ section {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 30rem;
+    width: 32rem;
     margin: 1rem 0 2rem;
 }
 
@@ -373,8 +373,8 @@ section {
     justify-content: center;
     align-items: center;
     grid-gap: 18em;
-    /* background: rgb(100, 185, 67);
-    min-height: 100vh;
+    background: var(--secon-bg-color);
+    /* min-height: 100vh;
     height: 100%;
     width: 100%;
     display: grid;
@@ -391,7 +391,7 @@ section {
 .about .img-about img {
     max-width: 40rem;
     height: auto;
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 
 /* .about-content span {
@@ -425,7 +425,7 @@ section {
 .info-about2,
 .info-about3 {
     background: var(--bg-color);
-    font-size: 1px;
+    font-size: 1rem;
     position: absolute;
     padding: 2.8rem;
     width: 9rem;
@@ -489,7 +489,7 @@ section {
 
 .main-text span {
     color: rgb(229, 233, 14);
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 200;
     letter-spacing: .2rem;
     text-transform: uppercase;
@@ -537,7 +537,7 @@ section {
 
 .service-box h3 {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .service-box p {
@@ -552,7 +552,7 @@ section {
 
 /* skills section css ----------------- */
 .skills {
-    background: rgb(66, 66, 63);
+    background: var(--secon-bg-color);
     align-items: center;
     justify-content: center;
     /* min-height: 100vh;
@@ -641,7 +641,7 @@ section {
 
 /* portfolios section css ----------------- */
 .portfolios{
-    background: rgb(13, 112, 241);
+    /* background: rgb(13, 112, 241); */
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -764,7 +764,7 @@ section {
 /* Contact section css ----------------- */
 
 .contact {
-    background: gray;
+    background: var(--secon-bg-color);
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -812,13 +812,13 @@ section {
 footer {
     padding: 1.5rem 10%;
     display: flex;
-    background-color: rgb(24, 17, 17);
+    background-color: var(--bg-color);
     align-items: center;
     justify-content: space-between;
 }
 
 footer p {
-    color: rgb(180, 140, 8);
+    color: var(--big-font);
 }
 
 footer a {
@@ -977,7 +977,7 @@ footer a i {
 
 @media(max-width:900px){
     html{
-        font-size: 50%;
+        font-size: 55%;
     }
 }
 
