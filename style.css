@@ -145,6 +145,7 @@ section {
 
 .home-content {
     max-width: 60rem;
+    margin-top:2rem;
 }
 
 .home-content h1 {
@@ -153,7 +154,7 @@ section {
 }
 
 .change-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -280,7 +281,7 @@ section {
 }
 
 .social-icon {
-    margin-top: 5rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
     width: 32rem;
@@ -986,8 +987,10 @@ footer a i {
         transition: all .5s ease;
         font-size: large;
     }
-
-
+    
+    #menu-icon{
+        transform: rotate(-180deg);
+    }
     .navlist{
         display: flex;
         position: absolute;
@@ -1038,7 +1041,7 @@ footer a i {
         grid-gap: 2rem;
     }
     .home-content{
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .about{
