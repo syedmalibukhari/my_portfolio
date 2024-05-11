@@ -446,17 +446,17 @@ section {
 
 .info-about1 {
     left: 10%;
-    top: 20%;
+    bottom: 20%;
 }
 
 .info-about2 {
     left: 66%;
-    top: 10%;
+    bottom: 10%;
 }
 
 .info-about3 {
     left: 61%;
-    top: 51%;
+    bottom: 51%;
 }
 
 .img-about span {
